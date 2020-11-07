@@ -12,7 +12,7 @@ import RAKE
 import operator
 import json
 
-stop_dir = "SmartStoplist.txt"
+stop_dir = "SmartStoplistUpdated.txt"
 keywords = ""
 rakeObj = RAKE.Rake(stop_dir)
 openingdata = open("csvjson.json", encoding="utf8")
