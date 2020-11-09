@@ -44,5 +44,5 @@ for k in keywords:
     print('Groups: ', k)
     obj.writerow({"keys" : k})
 csvfile.close()
-#Error: The keys will be appended to the next rows, and dont write it in
-#existent entries.
+#Error: The keys will be appended to the next rows, not to the existent.
+#Thus, new rows' properties like job title, location arte empty and only keys are there. See new_csv.csv.
