@@ -36,7 +36,7 @@ with open('csv.csv', encoding="utf8") as csv_file:
                 tuple_elements.append(a_tuple[0])
             keywords.append(tuple_elements)
       
-csvfile = open('new_csv.csv','w', encoding ="utf8", newline='')
+csvfile = open('new_csv.csv','a', encoding ="utf8", newline='')
 fieldnames = ["job_title", "job_location", "company_name", "job_summary", "post_date", "extract_date", "job_salary", "posting_url", "description_text", "keys"]
 obj = csv.DictWriter(csvfile, fieldnames = fieldnames)
 #write in the row "Keys" the keywords for each row
